@@ -7,10 +7,18 @@ body {
   padding: 0 0;
   margin: 0 auto;
   width: 80%;
+  background: #EFEEEC;
+  font-family: calibri;
+}
+
+header img {
+  width: 22%;
+  height: auto;
+  margin: 20px 0;
 }
 
 nav {
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.65);
   background-size: cover;
   height: auto;
   /* margin: 20px 0; */
@@ -24,28 +32,29 @@ nav ul {
   /* float: left; */
   list-style: none;
   overflow: auto;
+  margin-left: 40px;
 }
 
 nav ul li {
   float: left;
-  padding: 20px;
+  padding: 10px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.rem;
 }
 
 nav ul li:hover {
   background-color: darkorange;
   border-radius: 5px;
 }
-
+/*
 .active {
   background-color: darkorange;
   border-radius: 5px;
-}
+} */
 
 #container {
   display: flex;
@@ -62,54 +71,64 @@ aside {
 }
 
 main .main-ar, aside .sub-ar {
-  border: 1px solid rgba(0,0,0,0.75);
+  background: #fff;
+  border: 1px solid #fff;
   border-radius: 5px;
-  margin-top: 40px;
+  margin: 20px 0;
+  padding: 30px 20px 30px 20px;
 }
 
 main .main-ar > header{
-  background: rgba(0,0,0,0.75);
-  color: #fff;
-  padding: 10px 20px;
+  /* background: rgba(0,0,0,0.75); */
+  color: #f00;
+  /* padding: 10px 20px; */
 }
 
-main .main-ar > section{
-  margin : 40px 20px;
+main .main-ar > section p, aside .sub-ar > section p{
+  /* margin : 40px 20px; */
   font-size: 1.2rem;
-  line-height: 1.2rem;
+  padding-top: 20px;
+  line-height: 25px;
+  /* line-height: 1.2rem; */
+}
+
+main .main-ar > section p.desc {
+  color: #777777;
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
 aside .sub-ar > header {
-  background: rgba(0,0,0,0.75);
-  color: #fff;
-  padding: 10px 20px;
-}
-
-aside .sub-ar > section {
-  margin : 40px 20px;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  /* background: rgba(0,0,0,0.75); */
+  color: #000;
+  /* padding: 10px 20px; */
 }
 
 footer {
-  background: rgba(0,0,0,0.75);
-  margin-top: 40px;
-  padding: 20px 0;
-  text-align: center;
+  background: rgba(0,0,0,0.65);
+  padding: 20px 20px;
   color: #fff;
   border-radius: 5px;
 }
 
+footer p > a.marlabs {
+  color: #f00;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 600px) {
 
   body {
-    width: 100%;
+    width: 95%;
   }
 
   header img {
     width: 100%;
     height: auto;
+  }
+
+  nav ul {
+      margin-left: 00px;
   }
 
   nav ul li{
